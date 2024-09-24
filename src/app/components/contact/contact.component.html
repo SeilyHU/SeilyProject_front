@@ -1,0 +1,35 @@
+<!--Se refleja lo de padres e hijos donde tomamos un html de slider 
+    siendo contact el padre y slider el hijo-->
+
+<div class="container">
+    <h1>Contacto</h1>
+
+    <div id="texto" #textos>
+        <p [hidden]="false" appResaltado>
+            Esta es la página de contacto, puedes enviarnos cualquier duda
+        </p>
+    </div>
+    
+
+    <!--
+    Tamaño del Slider:
+    <input type=" number" [(ngModel)]="widthSlider" />
+    
+    <button (click)="cargarSlider()">Cargar Slider</button>
+    <button (click)="resetearSlider()">Resetear Slider</button>
+    -->
+    <!--Componente Hijo-->
+    <div >
+        <slider [anchura]="anchuraToSlider"
+                [etiquetas]="captions"
+                (conseguirAutor)="getAuthor($event)"
+        ></slider>    
+    </div>
+
+    <div class="datos" *ngIf="autor" >
+        {{autor.nombre + " " + autor.correo}}
+    </div>
+  
+    
+    
+</div>
