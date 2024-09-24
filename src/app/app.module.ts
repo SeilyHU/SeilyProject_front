@@ -18,6 +18,7 @@ import { SliderComponent } from './components/slider/slider.component';
 //En esta parte se importa todo lo que esta en jquery 
 import * as $ from 'jquery';
 import { ResaltadoDirective } from './resaltado.directive';
+import { NuevoTextComponent } from './nuevo-text/nuevo-text.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { ResaltadoDirective } from './resaltado.directive';
     EditComponent,
     SliderComponent,
     ResaltadoDirective,
+    NuevoTextComponent,
     
   ],
   imports: [
